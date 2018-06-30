@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="296056c5-f6e3-41c3-b2d0-7ced5deaad5d" name="NotepadUseCase" linkedPackageId="d17fc6ce-fad8-4184-9903-6a5113cedddd" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="04be19ae-0a84-48b4-902a-a49cd884bef1">
+      <elementDefinition Id="f9158386-a05d-4789-946d-f8d0e8174818" />
+      <body>
+Includes removing and adding files to the server's file system storage</body>
+      <annotatedElements>
+        <useCaseMoniker Id="b6a0c80f-451b-4258-b8af-a17b118a8e48" LastKnownName="Add/Delete files" />
+      </annotatedElements>
+    </comment>
+    <comment Id="a5dee334-04ad-4b99-af53-3773c850d171">
+      <elementDefinition Id="20219784-4cc5-4507-9cc6-78d68ba57c7c" />
+      <body>See: Document Editing Subsystem</body>
+      <annotatedElements>
+        <useCaseMoniker Id="8c1543d4-89ee-4c57-8f9d-8df4b69c9d48" LastKnownName="Edit Documents" />
+      </annotatedElements>
+    </comment>
+    <comment Id="1118d703-1a90-4dc4-a274-d7a92c706a40">
+      <elementDefinition Id="2371c99c-862d-4684-bae2-b3888d821284" />
+      <body>These invole sharing control of the text area with multiple people
+</body>
+      <annotatedElements>
+        <useCaseMoniker Id="b3f0ef06-9ecb-4bf8-abf3-1f87bf264a6b" LastKnownName="Release control" />
+        <useCaseMoniker Id="fa510415-11df-4b9d-a6a7-0854e767e799" LastKnownName="Take control" />
+      </annotatedElements>
+    </comment>
+    <comment Id="5a17e4db-3250-4517-bb14-84fab3661986">
+      <elementDefinition Id="ce18e5f4-fd1a-493c-a9f4-6b350dbf4ad9" />
+      <body>This subsystem manages the groups of files on a larger scale as opposed to individual files which is handled by the document editing subsystem.</body>
+      <annotatedElements>
+        <subsystemMoniker Id="961164ec-2c09-4507-8d4f-46f78096e420" LastKnownName="File Managment" />
+      </annotatedElements>
+    </comment>
+    <comment Id="9b4231d8-9df1-4c9e-b079-3d349bb3bd52">
+      <elementDefinition Id="4312a915-4e13-4d51-a4ac-aa1a574d076e" />
+      <body>This subsystem handles the indivual editing of text in documents.
+</body>
+      <annotatedElements>
+        <subsystemMoniker Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" LastKnownName="Document Editing" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9769cb65-4f82-4a08-8848-47013970c692" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b469d1a4-1181-4c53-9464-dfd57e591f3d" />
+        <targetEnds>
+          <association Id="55a18bc4-5b10-45b0-ba08-fa021509491d" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Manage Shared Files" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6ec7b6eb-f1cc-4706-b084-2f03a991012e" LastKnownName="Manage Shared Files" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="641f0c65-654b-468b-ae11-67af18cc1345" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="110a5337-f095-46d0-906c-38dc387c5df2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c419302e-95b6-4e8e-923e-bfd24df42041" name="Manage Shared Files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4672ce5d-bc56-4a11-b719-74d08bcd4332" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d01cf7cb-a5e3-47ce-a181-1c33a0269ce0" />
+          </association>
+          <association Id="e7ef5874-dc5d-46b8-95a3-ddee49223ec6" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Edit Documents" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="04bb3de7-dc14-49cc-b6eb-0386dbb324ed" LastKnownName="Edit Documents" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f38eed32-a040-4037-9da4-e0564c28c92b" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6343d0e0-61eb-453a-abab-718826000327" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4b7c0ed3-d44d-4905-bec3-05803a723854" name="Edit Documents" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4f04e856-8126-422a-aada-d250123bdc04" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c50f0674-cf45-458d-a2a7-35290fc5f789" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="961164ec-2c09-4507-8d4f-46f78096e420" name="File Managment" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="791e615c-506b-4866-9530-99a4c2646f8b" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" name="Document Editing" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2e23096e-350e-436f-826d-06c28667e95a" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="6ec7b6eb-f1cc-4706-b084-2f03a991012e" name="Manage Shared Files" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="27128c96-dcc7-48ea-8015-093947d00983" />
+        <targetEnds>
+          <association Id="ace4d048-5a93-4d32-a643-db20b401a964" isDerived="false" sourceEndRoleName="Manage Shared Files" targetEndRoleName="Open project" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e20e2d7d-5463-496f-8ec2-0ed56f49c53c" LastKnownName="Open project" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ef6a2cda-73f7-4fed-b348-38154fb7f23d" name="Manage Shared Files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="49122092-2098-4abd-b896-29fe49d3f37c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="298d0b36-8310-4243-844e-fd331ee2d645" name="Open project" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05f3fa26-d547-4a54-aa81-3be418a4f431" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bc2502de-e819-4679-8a90-50caee04ca90" />
+          </association>
+          <association Id="4f2fea41-d72a-44c8-8235-ebf2cf902982" isDerived="false" sourceEndRoleName="Manage Shared Files" targetEndRoleName="Create project" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="55d2fc55-12fe-4216-b10a-8553e0aeff59" LastKnownName="Create project" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9100326a-1efd-44d5-9f34-2d813c67b6a3" name="Manage Shared Files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="058589c9-7e28-4f3f-9915-bc86cd6663a4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db9567b9-e586-4c67-844b-40694b4cde41" name="Create project" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f40c78c2-0947-41c3-8362-a08821349c28" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3ae46cb8-8fd5-4557-8605-09f27784bfe2" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="961164ec-2c09-4507-8d4f-46f78096e420" LastKnownName="File Managment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="04bb3de7-dc14-49cc-b6eb-0386dbb324ed" name="Edit Documents" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dbdd7c96-e577-45fe-b899-4824b9f16502" />
+        <targetEnds>
+          <association Id="0fa3d5e5-ff3f-4b1c-b1b1-b42950fbce1b" isDerived="false" sourceEndRoleName="Edit Documents" targetEndRoleName="Open existing document" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c8ce3389-50eb-4cb0-a1ed-6342b025ff08" LastKnownName="Open existing document" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0cfa5e9-ed6c-4df4-854c-725d86ee1fb5" name="Edit Documents" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="832b3189-63df-4b05-a197-9a58b9dcb980" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="44a21983-c04e-4632-8a50-b0f41b78073d" name="Open existing document" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="56f4f6cd-48ba-4cdf-b4f1-5b7aff674679" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="442e007e-6dad-4558-8f19-a2488fe3e147" />
+          </association>
+          <association Id="9f9290cc-c2e9-4c51-a5a1-fd807de52b77" isDerived="false" sourceEndRoleName="Edit Documents" targetEndRoleName="Create new Document" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b2b0a7c7-ca48-4441-a665-4c926435cc24" LastKnownName="Create new Document" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="619aed5c-a784-496f-adba-a17bd6ad6776" name="Edit Documents" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4a890c52-5133-425e-b3d9-a180e75a6b41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="11382915-68d6-4822-bb69-a27b6de63dee" name="Create new Document" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5d251604-5d6c-47d3-bd99-8d75cd0c830c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9985ab60-9456-43e8-bc8c-b5c93385a377" />
+          </association>
+          <association Id="7067e063-9cb7-4e55-b4e6-b7f3d6951ab7" isDerived="false" sourceEndRoleName="Edit Documents" targetEndRoleName="Take control" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fa510415-11df-4b9d-a6a7-0854e767e799" LastKnownName="Take control" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa742c43-8260-487f-b595-fbe9529d951c" name="Edit Documents" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fd13c273-ff7a-478e-9963-6c4a467c2b0a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba28cb2a-13c6-4c24-bcff-c5f7b5c141a9" name="Take control" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="091cc74a-33f0-4561-a849-f321465e421c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4113ac13-14c3-430f-82a7-f1a6eca30a43" />
+          </association>
+          <association Id="1b2b3834-36b5-4d2d-85b5-8c01f5c9748f" isDerived="false" sourceEndRoleName="Edit Documents" targetEndRoleName="Release control" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b3f0ef06-9ecb-4bf8-abf3-1f87bf264a6b" LastKnownName="Release control" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7d38e40-7fab-4497-9ac5-a53e4f571d9e" name="Edit Documents" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a16ef709-f5e2-4022-b996-f6600634b219" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4e21723a-057a-4bb3-b14e-ea647914b2e4" name="Release control" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2d23454d-4ee7-471e-9c3c-1bce9a049197" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e5db71a2-80d3-4b73-ba12-cece3a2b9f97" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" LastKnownName="Document Editing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b2b0a7c7-ca48-4441-a665-4c926435cc24" name="Create new Document" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e7a9ce0-de51-43a3-914b-1778f7322e11" />
+        <subjects>
+          <subsystemMoniker Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" LastKnownName="Document Editing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c8ce3389-50eb-4cb0-a1ed-6342b025ff08" name="Open existing document" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3cb052c-31bc-4de1-a631-6e26123e77d7" />
+        <subjects>
+          <subsystemMoniker Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" LastKnownName="Document Editing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0f43455e-bd41-4045-b41d-4190ed3f13cf" name="Add/Remove Text" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6b94cb49-c403-4a2a-b7c3-39ca986262a3" />
+        <subjects>
+          <subsystemMoniker Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" LastKnownName="Document Editing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e20e2d7d-5463-496f-8ec2-0ed56f49c53c" name="Open project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3670ead8-0527-4e9e-9608-3848d9acfb7b" />
+        <targetEnds>
+          <association Id="ed88a1ab-2dfc-4fa0-8771-ef6394c6b0e0" isDerived="false" sourceEndRoleName="Open project" targetEndRoleName="Edit Documents" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8c1543d4-89ee-4c57-8f9d-8df4b69c9d48" LastKnownName="Edit Documents" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc7c3670-fb81-4806-8671-6c0ca4a5d9af" name="Open project" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="606214fa-bf46-49da-8618-8197c29bfff4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4dc79936-a527-4e6b-8b6d-ef55f974e9ca" name="Edit Documents" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a7856e93-bd2e-4f03-b483-05ceb28a3977" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5b30dd81-3d53-40d1-b99c-4547cd17dc29" />
+          </association>
+          <association Id="a8a074a3-0fe1-49e3-85c1-21644d3a6e59" isDerived="false" sourceEndRoleName="Open project" targetEndRoleName="Add/Delete non-text files" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b6a0c80f-451b-4258-b8af-a17b118a8e48" LastKnownName="Add/Delete files" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0fd2c3a7-c2f6-46ec-b8b1-8b58cca2fe88" name="Open project" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f78fd7a9-1f5e-4071-af44-ee633948ce1d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d9305de8-a66b-43a9-b2c9-3ed966672a79" name="Add/Delete non-text files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ef9e1b22-3a27-48fd-92e9-805d390da240" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cb0d3d1f-292f-470f-9b15-5c64d5744d73" />
+          </association>
+          <association Id="6a45d673-98fe-43af-83cb-627a454b235c" isDerived="false" sourceEndRoleName="Open project" targetEndRoleName="View Files" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="60de3d41-01c3-4d8a-8330-b13377e93bbe" LastKnownName="View Files" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f181a9e6-b840-4670-9dcb-4b59195c00e4" name="Open project" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="31cfb42e-8009-426d-9ef3-a161a4ae2099" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="563f05ff-4081-401f-9d33-e0907e20d00c" name="View Files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3317cde8-1ee1-4cd8-b72b-3f63c4f3a249" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b7478533-e9e9-423f-ae48-f54405ae4558" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="961164ec-2c09-4507-8d4f-46f78096e420" LastKnownName="File Managment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="55d2fc55-12fe-4216-b10a-8553e0aeff59" name="Create project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59373802-b119-4a3c-bb9d-538292179111" />
+        <subjects>
+          <subsystemMoniker Id="961164ec-2c09-4507-8d4f-46f78096e420" LastKnownName="File Managment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8c1543d4-89ee-4c57-8f9d-8df4b69c9d48" name="Edit Documents" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32027cd6-43c4-4458-b604-9727a743f00c" />
+        <subjects>
+          <subsystemMoniker Id="961164ec-2c09-4507-8d4f-46f78096e420" LastKnownName="File Managment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="60de3d41-01c3-4d8a-8330-b13377e93bbe" name="View Files" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9465218c-a2ab-4698-916b-89dccaa27d4a" />
+        <subjects>
+          <subsystemMoniker Id="961164ec-2c09-4507-8d4f-46f78096e420" LastKnownName="File Managment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b6a0c80f-451b-4258-b8af-a17b118a8e48" name="Add/Delete files" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="092e20e1-3b2f-42c0-8ef7-30bf00ecc751" />
+        <subjects>
+          <subsystemMoniker Id="961164ec-2c09-4507-8d4f-46f78096e420" LastKnownName="File Managment" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="447b6a84-43e0-4562-8b4b-714aae7c6770" name="Undo/Redo  actions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dddc0314-0075-44e7-ae9b-210e731d9a96" />
+        <subjects>
+          <subsystemMoniker Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" LastKnownName="Document Editing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="dc0b8ece-5dbf-4135-abc8-bfcb20bb3366" name="Edit document text" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4136050e-a4a0-48f9-849e-86bb30678bda" />
+        <targetEnds>
+          <association Id="c74e5595-e036-4719-b294-4a347829c6f8" isDerived="false" sourceEndRoleName="Edit document text" targetEndRoleName="Undo/Redo  actions" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="447b6a84-43e0-4562-8b4b-714aae7c6770" LastKnownName="Undo/Redo  actions" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bba18756-12f2-438c-9125-1a9d1778376c" name="Edit document text" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="474d6ab8-dd16-4cba-ab35-794006fb8abc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a4be594b-c178-4033-bb8e-81a8a8ca60f7" name="Undo/Redo  actions" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="40241147-acad-429a-bbef-596d47ceee1d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f9af7b9b-a94f-4e6d-90fa-12fc29221812" />
+          </association>
+          <association Id="74e932d4-77ff-456c-9281-5b3d6b279aca" isDerived="false" sourceEndRoleName="Edit document text" targetEndRoleName="Add/Remove Text" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0f43455e-bd41-4045-b41d-4190ed3f13cf" LastKnownName="Add/Remove Text" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d768716f-c883-4165-9800-511b0755a4b5" name="Edit document text" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="977dfb8c-ae60-40da-aa6b-c6a6c0ff5839" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="957c55f9-8517-4585-a4d7-cb01bb1d0002" name="Add/Remove Text" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2b0c1b92-7aa5-4c42-add4-0e2fda761637" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="390ab5f5-e695-4ec1-a342-c564ced3c346" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" LastKnownName="Document Editing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fa510415-11df-4b9d-a6a7-0854e767e799" name="Take control" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="20a1b2c6-2989-4528-86ed-8dc429ab543e" />
+        <targetEnds>
+          <association Id="531987b6-41ea-4938-95fd-f12e21104e2e" isDerived="false" sourceEndRoleName="Take control" targetEndRoleName="Edit document text" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dc0b8ece-5dbf-4135-abc8-bfcb20bb3366" LastKnownName="Edit document text" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d2259df-0a79-4036-b2a8-8017a7d07acb" name="Take control" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3312be84-ea96-4d48-90e7-0f2640632d5e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec8f774f-dcd7-4226-876b-9cc12f6369ad" name="Edit document text" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="502c7688-5620-4d19-b58f-373ccab25668" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f12a7870-0e82-475d-b18e-44819ea5fc74" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" LastKnownName="Document Editing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b3f0ef06-9ecb-4bf8-abf3-1f87bf264a6b" name="Release control" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92ef5142-017e-4cbb-9332-801e94d7c6bb" />
+        <subjects>
+          <subsystemMoniker Id="6247d200-aad8-4f14-ba3d-6c4b9b718abf" LastKnownName="Document Editing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="d17fc6ce-fad8-4184-9903-6a5113cedddd" name="UseCaseModelingProject">
+    <elementDefinition Id="c5585487-279f-4447-9a46-275cb47f9ef2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9ff79716-a790-4e2a-aa87-09bfd21dad34">
+        <profileInstance Id="8dfa3688-e5c1-40c7-8e24-4d4f2e00721b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c086436d-efbe-4e69-bb2e-da231f22820e">
+        <profileInstance Id="0c818955-b9d9-487b-81d6-23ca07278a0a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

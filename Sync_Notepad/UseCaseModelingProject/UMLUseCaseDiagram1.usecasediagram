@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="a74e2817-615a-4064-b642-90648fd0c3db" name="Admin" linkedPackageId="0c08083b-460d-4d24-b3c4-39df586c1768" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="c57d5e3e-e344-4f1a-969f-d3d18efab126" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="56ad42ba-33ec-4375-94ba-021a0ef07c9c" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="385235fd-5f6b-4be0-a8a5-8f391c2eb73f">
+          <propertyInstance Id="d99788ee-3cf9-438f-8afc-d0abbb598119" name="BaseName">
+            <elementDefinition Id="5b05cd05-40f8-496a-8dc0-0d2d040c848d" />
+          </propertyInstance>
+          <elementDefinition Id="65956887-a4da-463d-bdd8-10f60e1d6185" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="597717a3-a2a0-4696-aa1d-82fe666492f9">
+          <propertyInstance Id="0a47de71-cd5d-4ad4-80c8-11d77aa334df" name="ClrAttributes">
+            <elementDefinition Id="acb8e865-7940-42f4-be97-889fdb83dc2c" />
+          </propertyInstance>
+          <elementDefinition Id="712646b1-a989-4b03-9ca4-5c38102f33dd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5f32307c-b96d-4ce5-8a7f-0e2908c3c706">
+          <propertyInstance Id="70d37ead-e7ed-4345-b0b2-e78165bfb4d2" name="Usings">
+            <elementDefinition Id="8e9d4129-82b1-4a17-93be-2d83be307346" />
+          </propertyInstance>
+          <elementDefinition Id="99a0a32f-ea08-4164-9a5e-97acd9079b88" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="74b0bb26-7752-4d51-bf81-8a7311ebc290" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="79cd3730-71f2-4759-832a-c17bfcd7d4d8" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b8b7ba7e-dd6e-4fb3-b581-8b6b304b56ab">
+          <propertyInstance Id="ef665d03-b8c8-4d47-96a6-4e91546cba2d" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="29953ac6-5e64-4622-85bf-c1432a28f737" />
+          </propertyInstance>
+          <elementDefinition Id="6dd46b2c-77f5-4728-a6ec-c8195ff982c7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="bee61caf-7dfe-4d70-8055-378cf4685b8e">
+          <propertyInstance Id="3bd89770-251a-4196-845b-4246e9cc068a" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="426b7076-43e1-4511-bccd-21356bbc5fbc" />
+          </propertyInstance>
+          <elementDefinition Id="43ea9d04-69ba-427c-a962-7b6fc30f5976" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ffec24d3-7319-4cf8-a80d-b99b894452fa">
+          <propertyInstance Id="7a2b433c-57ce-40f6-a8f2-9cc3226052ec" name="ProjectPath" value="ClassTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj|EnumTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj|InterfaceTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj|StructTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj">
+            <elementDefinition Id="5f7262bc-1f6d-4398-a01e-a9ec11d8436a" />
+          </propertyInstance>
+          <elementDefinition Id="b4c0987d-bd26-4461-b5e7-882c25b0aa5d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5fc94e89-38dd-4b46-a31e-ba74e359122c">
+          <propertyInstance Id="64998f37-d85e-40a5-af9f-abde46a7c979" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="1fd96d62-d9d2-43ce-86e9-b5f9166c755f" />
+          </propertyInstance>
+          <elementDefinition Id="cd6a9740-e061-4bcb-87d0-438aa2966aea" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4b39f8ef-8c69-49f3-9bdc-bcf07011176f">
+          <propertyInstance Id="ddd13efe-9bb8-4a3a-8612-0ee4336fd411" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="30fd1f85-cb53-486b-8b59-eb387ac2ace2" />
+          </propertyInstance>
+          <elementDefinition Id="ed79b080-0056-4c26-a2a1-d0cbbdcd521d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d4b88cba-aebe-4fd0-9cf6-5e26687b2717">
+          <propertyInstance Id="c8516fa8-35b7-4b4e-add8-35b7a576c9a2" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="066538f3-e5c9-41b7-84ce-31583c8cdcc0" />
+          </propertyInstance>
+          <elementDefinition Id="f2acfde8-ed28-45c6-9627-858d0e309576" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="2bd4c871-b267-49b0-afec-074c2463e3a4">
+          <propertyInstance Id="8adf7415-a3b9-40d4-8527-cdc216255d3e" name="Parameters">
+            <elementDefinition Id="58017755-ab95-4043-8073-d13f5d5bbb3e" />
+          </propertyInstance>
+          <elementDefinition Id="86f761c5-198e-446c-afb9-6a5b0b54f4e0" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="473b9b2e-59ac-43ca-b95c-0a4c803ad5a6">
+      <profileInstance Id="5b6b705a-2f7a-4384-984f-8f79980a30df" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8cee5a31-8843-47d2-803a-84ed9b95cf18">
+      <profileInstance Id="69f7183b-d198-471a-a9f2-89308a3bb804" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0c28ad9e-7ea6-4c1b-ad20-6e40deb2b028">
+      <profileInstance Id="ead3e526-5734-4f47-9c19-d68b260e552a" name="CSharpProfile">
+        <elementDefinition Id="72a96e2d-5387-4b8a-89ac-c061304a9cbb" />
+      </profileInstance>
+      <elementDefinition Id="e84088be-214a-41ed-b71a-efed92e1e7e5" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cb644c03-417f-4af4-9d5f-3c8c641c5c2d">
+      <profileInstance Id="31906714-7c73-41de-be82-cfe39fcdd8d2" name="TextTemplateBindings">
+        <elementDefinition Id="7f0aa099-20d5-4e4f-912a-e8c2bf9d94a4" />
+      </profileInstance>
+      <elementDefinition Id="4a898e71-9719-4d14-8d62-d20fae3350a4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="42d0a417-f8f9-4610-a218-96d0a9420063" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4f143bb-41d0-4fa3-8e14-0162c41eb09d" />
+        <targetEnds>
+          <association Id="3fb38ff9-5319-44e9-97f4-4ae248265cf6" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add/Delete User" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5feafc77-7e6d-467d-813a-27dfefbc991f" LastKnownName="Add/Delete User" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ed0cda84-7535-478f-8384-66095184946a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="574db040-c6ca-4dca-8fc9-5130096d5c66" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c9912f6a-6770-4486-bdc1-10c0a7514366" name="Add/Delete User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4d77e817-2cbf-4878-9fab-34aba2d37006" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c35fbfb0-c1c8-4244-8eab-4d5481e51212" />
+          </association>
+          <association Id="3e655372-bd11-4b76-bc12-a22aa6b82dba" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Create/Dlete Filegroup" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bbd9bbaf-c867-4393-b715-ae1b4e1eb0b7" LastKnownName="Create/Dlete Filegroup" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02bc267d-f38b-4a0f-b83a-05fe08f2a996" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5de5cfa0-dd5b-41a8-9fe7-0269807b5017" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83898af3-4ab9-4b1b-a4d8-f8e75b0b3e52" name="Create/Dlete Filegroup" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="93a40b25-8142-44f0-b7a9-0a3cc6c0a70b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1fee600d-8736-4c4f-bab5-cc6377f5b156" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="1ca6dfc3-9a96-4c4d-af6c-473e7e12bfe0" name="Admin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ca88a111-b662-4035-81f3-feaedd9acc9c" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="5feafc77-7e6d-467d-813a-27dfefbc991f" name="Add/Delete User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97eff9f0-72db-4c88-80f9-c94d6329bf97" />
+        <targetEnds>
+          <association Id="af735625-2b57-4db3-ac94-d4954cf3f061" isDerived="false" sourceEndRoleName="Add/Delete User" targetEndRoleName="Server" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="8f269b2a-6f3a-4ea6-9b8a-f42d7d43f79b" LastKnownName="Server" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00e74909-cb3b-4eec-80c4-670ed8a0ce24" name="Add/Delete User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="26464ad8-d799-4d99-9ea5-24709e91be1d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="922ac5e9-b90e-4ce2-bbf0-99d538211171" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="50333a9b-feae-4326-8ef8-5304c48ebb96" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c0c2e591-57a9-4f29-a2ba-04a66d5ac864" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="1ca6dfc3-9a96-4c4d-af6c-473e7e12bfe0" LastKnownName="Admin" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="bbd9bbaf-c867-4393-b715-ae1b4e1eb0b7" name="Create/Dlete Filegroup" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="08614e69-ee0a-4b22-a691-ee15c9b809ee" />
+        <targetEnds>
+          <association Id="a893dee6-9ae4-43d6-bc3b-c94ceea9e6ab" isDerived="false" sourceEndRoleName="Create/Dlete Filegroup" targetEndRoleName="Server" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="8f269b2a-6f3a-4ea6-9b8a-f42d7d43f79b" LastKnownName="Server" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc5278f5-3e65-46f5-b036-981243ca8611" name="Create/Dlete Filegroup" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f9b2f777-8057-47a2-aac6-edd89ab32d51" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="257fa712-e5d7-4b66-ae04-696bfa63f678" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e6f91803-7c1b-429d-a96e-494d08994255" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3462a4f4-9f73-4e2f-8e46-e34aae423eac" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="1ca6dfc3-9a96-4c4d-af6c-473e7e12bfe0" LastKnownName="Admin" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="8f269b2a-6f3a-4ea6-9b8a-f42d7d43f79b" name="Server" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9cd88d3b-74a0-46d0-920d-415d35b8004b" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0c08083b-460d-4d24-b3c4-39df586c1768" name="UseCaseModelingProject">
+    <elementDefinition Id="c5585487-279f-4447-9a46-275cb47f9ef2" />
+  </package>
+</useCaseModelRoot>

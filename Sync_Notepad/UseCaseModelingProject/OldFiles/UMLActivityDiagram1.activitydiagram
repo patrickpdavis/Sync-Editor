@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="d800f9d6-6fc7-4ff3-bc9e-4799d54876b9" name="Server" linkedPackageId="b6153bc4-b9cf-472c-946c-9aabcf2533e3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="32f6997c-160d-4d1b-a73e-125b5ca7d293" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="56ad42ba-33ec-4375-94ba-021a0ef07c9c" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="32fc5f99-51b1-495c-a243-04e6bbecce10">
+          <propertyInstance Id="b103b640-aa39-4246-8689-8a985ba68f6d" name="BaseName">
+            <elementDefinition Id="5b05cd05-40f8-496a-8dc0-0d2d040c848d" />
+          </propertyInstance>
+          <elementDefinition Id="65956887-a4da-463d-bdd8-10f60e1d6185" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="229ee205-90ed-4557-9fda-04240c480950">
+          <propertyInstance Id="403f195f-392f-4697-b79d-390cce498b92" name="ClrAttributes">
+            <elementDefinition Id="acb8e865-7940-42f4-be97-889fdb83dc2c" />
+          </propertyInstance>
+          <elementDefinition Id="712646b1-a989-4b03-9ca4-5c38102f33dd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="621a9dd8-6a4e-4979-8df6-34da5d17e970">
+          <propertyInstance Id="ef05f647-92e7-4618-8ead-d57729d92bbc" name="Usings">
+            <elementDefinition Id="8e9d4129-82b1-4a17-93be-2d83be307346" />
+          </propertyInstance>
+          <elementDefinition Id="99a0a32f-ea08-4164-9a5e-97acd9079b88" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="7687c847-e577-4b16-a40b-3c00005af4e2" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="79cd3730-71f2-4759-832a-c17bfcd7d4d8" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="82f481b9-8b29-452e-830b-209de6006924">
+          <propertyInstance Id="94e21bc8-6086-4728-a2c6-8d9b51ccc234" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="29953ac6-5e64-4622-85bf-c1432a28f737" />
+          </propertyInstance>
+          <elementDefinition Id="6dd46b2c-77f5-4728-a6ec-c8195ff982c7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1debdff4-8f76-4ee8-8e99-46a22bb4fe29">
+          <propertyInstance Id="e05c72a1-4167-4bee-89b4-91dafba608ab" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="426b7076-43e1-4511-bccd-21356bbc5fbc" />
+          </propertyInstance>
+          <elementDefinition Id="43ea9d04-69ba-427c-a962-7b6fc30f5976" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ac03b4ed-ed8a-4393-9247-bbcb83194798">
+          <propertyInstance Id="55eeae37-4aec-4372-a023-017d53cd721c" name="ProjectPath" value="ClassTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj|EnumTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj|InterfaceTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj|StructTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj">
+            <elementDefinition Id="5f7262bc-1f6d-4398-a01e-a9ec11d8436a" />
+          </propertyInstance>
+          <elementDefinition Id="b4c0987d-bd26-4461-b5e7-882c25b0aa5d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="981ee653-b189-4f7b-a2ab-1b48bfc13b38">
+          <propertyInstance Id="3a4a6fcf-50f1-4787-83dd-bddf1024ebad" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="1fd96d62-d9d2-43ce-86e9-b5f9166c755f" />
+          </propertyInstance>
+          <elementDefinition Id="cd6a9740-e061-4bcb-87d0-438aa2966aea" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="aefcdc92-b952-4b02-a1b5-25e9184404d4">
+          <propertyInstance Id="261327ac-f731-4ed2-85d8-0cb750effce2" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="30fd1f85-cb53-486b-8b59-eb387ac2ace2" />
+          </propertyInstance>
+          <elementDefinition Id="ed79b080-0056-4c26-a2a1-d0cbbdcd521d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8b1b575b-8b7c-467b-8ee4-4704a822700c">
+          <propertyInstance Id="446932cb-412e-4dfa-b320-1c8bf63472a4" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="066538f3-e5c9-41b7-84ce-31583c8cdcc0" />
+          </propertyInstance>
+          <elementDefinition Id="f2acfde8-ed28-45c6-9627-858d0e309576" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fdd9caf5-fa72-49f9-9813-74c7bb00d6d0">
+          <propertyInstance Id="7539446d-42bf-4376-bc58-0e9571df6027" name="Parameters">
+            <elementDefinition Id="58017755-ab95-4043-8073-d13f5d5bbb3e" />
+          </propertyInstance>
+          <elementDefinition Id="86f761c5-198e-446c-afb9-6a5b0b54f4e0" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="d67e5180-ab41-4d17-b233-db74d1a2de53">
+      <profileInstance Id="3b47319f-efdd-44be-bece-e277e8fadfdd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dc5be1c3-5757-40c4-bae0-46c76b293bdd">
+      <profileInstance Id="be570f10-30c6-4385-b084-a68c414cb56f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="312777f8-e3f7-41cd-9701-279a7d4dfeb5">
+      <profileInstance Id="c7e71afd-bd55-4f71-8a56-5687a3e1a6a4" name="CSharpProfile">
+        <elementDefinition Id="72a96e2d-5387-4b8a-89ac-c061304a9cbb" />
+      </profileInstance>
+      <elementDefinition Id="e84088be-214a-41ed-b71a-efed92e1e7e5" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="38dd377a-fa0a-4930-9ac9-3f94b3450903">
+      <profileInstance Id="a562bb31-b2e9-4f54-b956-16317876bc2b" name="TextTemplateBindings">
+        <elementDefinition Id="7f0aa099-20d5-4e4f-912a-e8c2bf9d94a4" />
+      </profileInstance>
+      <elementDefinition Id="4a898e71-9719-4d14-8d62-d20fae3350a4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b50f4b09-6738-4110-8022-3e3c152c217a" name="Server" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="4042e733-4f64-43b4-9ce6-8f9a3c3950c5" />
+        <nodes>
+          <initialNode Id="a9e166ba-c365-475b-a4ff-0a2cb4bd2a7f" name="Initial1" isLeaf="false">
+            <elementDefinition Id="5d9d2b9a-30d3-4e2a-8276-a6dd6921627e" />
+            <flowNodeTargets>
+              <controlFlow Id="0e80d5b2-c364-462a-9d7d-e8872f1dadde" isLeaf="false">
+                <opaqueActionMoniker Id="9d88be17-58d1-46ea-ad42-11c476356038" LastKnownName="Listener Starts" />
+                <elementDefinition Id="0a2e0ad6-6cd3-4781-9f48-d9122b2e90c3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="9d88be17-58d1-46ea-ad42-11c476356038" name="Listener Starts" isLeaf="false">
+            <elementDefinition Id="4e12e40b-264c-4bcc-8bf1-53749a1aedc3" />
+            <flowNodeTargets>
+              <controlFlow Id="17e61ce2-52d4-4332-8af3-e2cd932ce92c" isLeaf="false">
+                <forkNodeMoniker Id="219ece4a-35ea-48d3-be72-cce756741860" LastKnownName="Fork1" />
+                <elementDefinition Id="8beadaf9-15b1-4acc-be00-96a06473711c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="219ece4a-35ea-48d3-be72-cce756741860" name="Fork1" isLeaf="false">
+            <elementDefinition Id="188b6290-b406-4610-8a93-688535ff5230" />
+            <flowNodeTargets>
+              <controlFlow Id="805078b7-b7dd-4001-94f7-d790004618b6" isLeaf="false">
+                <opaqueActionMoniker Id="bdbc18e6-86fd-427f-8ed9-6273c2264c27" LastKnownName="Receive User Message" />
+                <elementDefinition Id="e929b0ef-30f6-4b72-8d44-350f93d42d60" />
+              </controlFlow>
+              <controlFlow Id="821b2e45-22e7-44a0-ba21-415e9e99c5da" isLeaf="false">
+                <opaqueActionMoniker Id="59bb384a-0e5a-491c-b007-ac0fb44fb0d8" LastKnownName="Receive Text Message" />
+                <elementDefinition Id="3d4b2838-98d7-45cd-9001-7273678a3326" />
+              </controlFlow>
+              <controlFlow Id="55a8c298-c493-49e3-9891-098e45f54787" isLeaf="false">
+                <opaqueActionMoniker Id="1723b853-a1b1-466a-8ae7-980b4645f93b" LastKnownName="Receive Document Message" />
+                <elementDefinition Id="34360ca1-78e7-4603-bfb2-a7ab29882bee" />
+              </controlFlow>
+              <controlFlow Id="e3dd9ccd-06b3-413d-baea-a8323d1d3300" isLeaf="false">
+                <opaqueActionMoniker Id="4fb557ae-6b7d-4ab4-a34c-bd64ac2a1a60" LastKnownName="Receive System message" />
+                <elementDefinition Id="bb676f53-cb5b-4cbf-a34a-dcb82e8fdc0d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="bdbc18e6-86fd-427f-8ed9-6273c2264c27" name="Receive User Message" isLeaf="false">
+            <elementDefinition Id="5497a9e2-7fa2-4518-98b8-ffa406ece6c8" />
+            <flowNodeTargets>
+              <controlFlow Id="1a2fd83e-b042-4ae4-9e93-0998ef22f07d" isLeaf="false">
+                <decisionNodeMoniker Id="25ebfc28-dd2e-4929-8398-fb3218486516" LastKnownName="Decision1" />
+                <elementDefinition Id="ccf89e7c-b334-47bf-8efa-399d8af8bb6f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="25ebfc28-dd2e-4929-8398-fb3218486516" name="Decision1" isLeaf="false">
+            <elementDefinition Id="0514feeb-b9b1-4e05-aeb0-432d5fb5175a" />
+            <flowNodeTargets>
+              <controlFlow Id="591f1cee-f3b6-41ac-99d4-4840208acabc" isLeaf="false">
+                <opaqueActionMoniker Id="88705e8d-8e24-4a48-9010-573d11714cff" LastKnownName="Deny Access" />
+                <elementDefinition Id="a666c9fc-e87c-4d3d-9b29-0a7174aebbb1" />
+              </controlFlow>
+              <controlFlow Id="f176d0c0-6fa9-4af5-bf3c-172559e105d2" isLeaf="false">
+                <opaqueActionMoniker Id="58c158fd-109e-4f4d-b6fe-6012eae88b81" LastKnownName="Open File Group" />
+                <elementDefinition Id="3da89811-3d7f-41e9-9624-795d5a26dc58" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="88705e8d-8e24-4a48-9010-573d11714cff" name="Deny Access" isLeaf="false">
+            <elementDefinition Id="6a34555d-f41c-4106-8526-6ab22f259dca" />
+            <flowNodeTargets>
+              <controlFlow Id="e3fdba91-0a61-4404-93aa-10a472a1ee65" isLeaf="false">
+                <joinNodeMoniker Id="f1c436ed-55a1-4b90-a858-6c50815348b7" LastKnownName="Join1" />
+                <elementDefinition Id="4f539262-125d-4a7c-ae04-a0c18442de56" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="58c158fd-109e-4f4d-b6fe-6012eae88b81" name="Open File Group" isLeaf="false">
+            <elementDefinition Id="6d0c20c5-d6cb-4779-a2d0-6d024b4a0a23" />
+            <flowNodeTargets>
+              <controlFlow Id="fbd08e39-b06d-491f-9938-acd8c97d557c" isLeaf="false">
+                <joinNodeMoniker Id="f1c436ed-55a1-4b90-a858-6c50815348b7" LastKnownName="Join1" />
+                <elementDefinition Id="a191a155-0bcf-4946-88a0-712e34d741f0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="59bb384a-0e5a-491c-b007-ac0fb44fb0d8" name="Receive Text Message" isLeaf="false">
+            <elementDefinition Id="0e45084a-72d8-4994-a159-a3ee50e3764d" />
+            <flowNodeTargets>
+              <controlFlow Id="1df067b3-71ae-4ceb-ad36-985fb3b061c1" isLeaf="false">
+                <opaqueActionMoniker Id="b90ff42a-9554-4753-9519-911e2e81949b" LastKnownName="Prep for distributing text message" />
+                <elementDefinition Id="f9831b4e-1ed6-4631-a88c-4937c8943c1c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b90ff42a-9554-4753-9519-911e2e81949b" name="Prep for distributing text message" isLeaf="false">
+            <elementDefinition Id="48ecab0a-35d1-4226-ac2d-5614085381eb" />
+            <flowNodeTargets>
+              <controlFlow Id="a38768df-8b92-4df7-a522-47b7541bc1f7" isLeaf="false">
+                <joinNodeMoniker Id="f1c436ed-55a1-4b90-a858-6c50815348b7" LastKnownName="Join1" />
+                <elementDefinition Id="415849cc-ffc9-49cb-a4dd-d7460f3e53ac" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1723b853-a1b1-466a-8ae7-980b4645f93b" name="Receive Document Message" isLeaf="false">
+            <elementDefinition Id="ffd570c2-2419-4f73-bb5e-9e50435978ac" />
+            <flowNodeTargets>
+              <controlFlow Id="be66e30b-fdc3-4298-95f1-ad2a5ccd66f9" isLeaf="false">
+                <decisionNodeMoniker Id="168b8866-6696-4eda-ab9d-12445cf59529" LastKnownName="Decision2" />
+                <elementDefinition Id="10c1d1ed-8668-454e-8292-8c622b76c95c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="168b8866-6696-4eda-ab9d-12445cf59529" name="Decision2" isLeaf="false">
+            <elementDefinition Id="c15e62fd-c4e3-407a-b5a9-4576319561cc" />
+            <flowNodeTargets>
+              <controlFlow Id="51f6afb7-3c4a-47e0-9cbf-4e3b6f0c2ea3" isLeaf="false">
+                <opaqueActionMoniker Id="eacd0596-6208-44a1-b5bb-a8ee48f76312" LastKnownName="Change File" />
+                <elementDefinition Id="79a5cc64-adc3-4c83-b04f-321f6760d4a7" />
+              </controlFlow>
+              <controlFlow Id="cf7aa2f2-4564-497d-92b3-4b936f1dfa8b" isLeaf="false">
+                <opaqueActionMoniker Id="38120f35-d59b-4413-ba74-7645f6e3530b" LastKnownName="Open File" />
+                <elementDefinition Id="afe2ce7b-6a28-4b19-b164-a0fa7cd4024c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="38120f35-d59b-4413-ba74-7645f6e3530b" name="Open File" isLeaf="false">
+            <elementDefinition Id="4c27551f-4fab-478a-ae2a-52756ac9d429" />
+            <flowNodeTargets>
+              <controlFlow Id="afe72647-8571-4d65-aee5-1c4f2ab81be4" isLeaf="false">
+                <joinNodeMoniker Id="f1c436ed-55a1-4b90-a858-6c50815348b7" LastKnownName="Join1" />
+                <elementDefinition Id="182297bb-23a3-45f8-bcfe-61707dea97d9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="eacd0596-6208-44a1-b5bb-a8ee48f76312" name="Change File" isLeaf="false">
+            <elementDefinition Id="daf1f25f-ca36-4ae5-96ec-ec8a91875d0f" />
+            <flowNodeTargets>
+              <controlFlow Id="4bbd0b0d-5c18-49e9-9138-d36d2be27c90" isLeaf="false">
+                <joinNodeMoniker Id="f1c436ed-55a1-4b90-a858-6c50815348b7" LastKnownName="Join1" />
+                <elementDefinition Id="7cf1fd67-eef7-437e-b35c-6d5d468d6483" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4fb557ae-6b7d-4ab4-a34c-bd64ac2a1a60" name="Receive System message" isLeaf="false">
+            <elementDefinition Id="5abaf168-7f8d-4bc6-82e6-d4a83a4f2adc" />
+            <flowNodeTargets>
+              <controlFlow Id="0f5ec17c-7bcd-44eb-9c07-9d30cb9aa02e" isLeaf="false">
+                <decisionNodeMoniker Id="835e9386-1f24-4dd3-95ea-d699e4fd7229" LastKnownName="Decision3" />
+                <elementDefinition Id="aa9fbb65-7777-4432-8471-b86bea1e90e1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="835e9386-1f24-4dd3-95ea-d699e4fd7229" name="Decision3" isLeaf="false">
+            <elementDefinition Id="45c60491-3a26-44c7-9c23-e8d8a2ded714" />
+            <flowNodeTargets>
+              <controlFlow Id="f7916c1a-8a86-4d02-b4b1-1de1e043ba1d" isLeaf="false">
+                <opaqueActionMoniker Id="7aba6472-bb2e-405d-9fb6-7ecacbffb563" LastKnownName="Create File" />
+                <elementDefinition Id="5bfb226f-f406-46f7-8f57-fecdf7d183c1" />
+              </controlFlow>
+              <controlFlow Id="2cf8d6a3-e8ae-4cbf-8880-2858306a08b1" isLeaf="false">
+                <opaqueActionMoniker Id="552fdf57-5494-4621-8d47-cdd990a3e255" LastKnownName="Open File" />
+                <elementDefinition Id="a1abdd81-f4ce-4cdc-b5df-c0e826eb93d7" />
+              </controlFlow>
+              <controlFlow Id="24e1e23c-5b80-4e79-bd9e-c12c95d429a1" isLeaf="false">
+                <opaqueActionMoniker Id="a00cb92b-b5e9-45f3-8506-dc53e40bb64c" LastKnownName="Get Filesystem Info" />
+                <elementDefinition Id="1cb3614d-bc3f-42dc-9df7-79aac6c55b8b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="7aba6472-bb2e-405d-9fb6-7ecacbffb563" name="Create File" isLeaf="false">
+            <elementDefinition Id="82fc9413-d0df-4e11-85c9-33ef9427126c" />
+            <flowNodeTargets>
+              <controlFlow Id="67665528-07d2-4701-94fa-0a672f49c058" isLeaf="false">
+                <joinNodeMoniker Id="f1c436ed-55a1-4b90-a858-6c50815348b7" LastKnownName="Join1" />
+                <elementDefinition Id="02e6febe-65a7-48ec-a04b-67611be233f9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="552fdf57-5494-4621-8d47-cdd990a3e255" name="Open File" isLeaf="false">
+            <elementDefinition Id="3688e1c4-eb72-4d22-9923-9c6c1cdf2b9b" />
+            <flowNodeTargets>
+              <controlFlow Id="bc252b1b-1431-4454-a698-c3e08c76f6b1" isLeaf="false">
+                <joinNodeMoniker Id="f1c436ed-55a1-4b90-a858-6c50815348b7" LastKnownName="Join1" />
+                <elementDefinition Id="46b0fc2c-6bc0-4795-b26e-efce17abaf8d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a00cb92b-b5e9-45f3-8506-dc53e40bb64c" name="Get Filesystem Info" isLeaf="false">
+            <elementDefinition Id="9b18776b-1767-4bab-a930-21b62ec300f1" />
+            <flowNodeTargets>
+              <controlFlow Id="cf6a2d67-0b96-41ac-b53a-dc1fa6cb09b8" isLeaf="false">
+                <joinNodeMoniker Id="f1c436ed-55a1-4b90-a858-6c50815348b7" LastKnownName="Join1" />
+                <elementDefinition Id="da7faf72-be2f-4230-a117-77d753fe6c86" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="f1c436ed-55a1-4b90-a858-6c50815348b7" name="Join1" isLeaf="false">
+            <elementDefinition Id="313d1562-1297-47dc-a10c-068e5e1ea72e" />
+            <flowNodeTargets>
+              <controlFlow Id="48c68638-f27c-4b5d-bd60-3ef7d3b166ee" isLeaf="false">
+                <opaqueActionMoniker Id="6508c395-8282-41f7-8db8-1f83fd4a653e" LastKnownName="Reply to Client" />
+                <elementDefinition Id="9aa9890f-4dc8-41f7-8391-9d57de62984a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="6508c395-8282-41f7-8db8-1f83fd4a653e" name="Reply to Client" isLeaf="false">
+            <elementDefinition Id="7cc2eb97-1250-466d-90b1-94fe6cb8271f" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="b6153bc4-b9cf-472c-946c-9aabcf2533e3" name="UseCaseModelingProject">
+    <elementDefinition Id="c5585487-279f-4447-9a46-275cb47f9ef2" />
+  </package>
+</activityRootModel>

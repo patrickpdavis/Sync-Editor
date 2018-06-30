@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="rs.xsl" ?>
+<doc>
+    <assembly>
+        <name>Live Collabrative Text Editor</name>
+        <version>1.0</version>
+    </assembly>
+
+    <requirements>
+
+       <requirement name="F:Server_setpassword">
+        <summary>
+            Sets a password for the server to be connected to with. Preventing unauthorized use of the server.
+        </summary>
+       </requirement>
+
+      <requirement name="F:Server_modifyFileGroup">
+        <summary>
+          The server needs to be able to create an delete a filegoup in addition to setting a user for a newly created
+          filegroup.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Server_modifyUsers">
+        <summary>
+          Allows removing and adding of users to the server. If a user is not on the list the only action they can
+          do is request access. Until their access has been approved by an admin they can do anything. If a user is
+          deleted they must not be the leader of any filegroup and if they are the groups need to be deleted or a
+          new leader must be asigned to the filegroup.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Server_modifyUserRights">
+        <summary>
+          A user can be set as an admin only on the server side of the system. If a user is an admin then they 
+          can modify filegroups and approve people to the server. This can only be done server side as there will
+          only be one level of admin.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Server_confirmUser">
+        <summary>
+          Once a user sends a request, the request can be handled server side or remotely handled by an admin.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Admin_modifyFilegroup">
+        <summary>
+          This requirement is the same as "Server_modifyFileGroup". However, it must be able to do so remotely from a
+          client.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Admin_modifyUser">
+        <summary>
+          This requirement is the same as "Server_modifyUsers". However, it must be able to do so remotely from a 
+          client gui.
+        </summary>
+      </requirement>
+      
+      <requirement name="F:Admin_confirmUser">
+        <summary>
+          This requirement is the same as "Server_Confirm". However, it must be able to do so remotely from a client
+          gui.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Client_connect">
+        <summary>
+          The user of the client gui must be able to connect to the server.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Client_login">
+        <summary>
+          Once connected the user must be able to login and logoff in addition to requesting access if it hasnt already
+          been granted.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Client_connectFilegroup">
+        <summary>
+          The user of the client gui must be able to connect to a filegroup to have access to any files.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Client_sendText">
+        <summary>
+          Users can send text messages to the server where they will be distributed to everyone labeled as connected.
+        </summary>
+      </requirement>
+      
+      <requirement name="F:Client_receiveText">
+        <summary>
+          In addition to sending text, the user must able to receive and have messages displayed.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Client_openFile">
+        <summary>
+          Any connected user that is authenticated through the server and has access to a filegroup must be able to
+          open a file in the document editor.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Client_closeFile">
+        <summary>
+          Once a file is open, the user must be able to close it.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Client_changeFile">
+        <summary>
+          If a file is not locked a user must be able to move, delete or rename the file.
+        </summary>
+      </requirement>
+
+      <requirement name="F:Client_create">
+        <summary>
+          Any connected user that is authenticated through the server and has access to a filegroup must be able to
+          create a file from scratch.
+        </summary>
+      </requirement>
+
+      <requirement name="F:GUI_client">
+        <summary>
+          The client gui must be able to edit, open, delete, move, and create files. In addition it must be able to 
+          perform all functions list above for "Client_"
+        </summary>
+      </requirement>
+
+      <requirement name="F:GUI_client">
+        <summary>
+          The client gui must be able to handle all items list above under "Admin_" as a entity seperate from the 
+          client gui.
+        </summary>
+      </requirement>
+
+      <requirement name="F:GUI_admin">
+        <summary>
+          The client gui must be able to edit, open, delete, move, and create files. In addition it must be able to
+          perform all functions list above for "Client_"
+        </summary>
+      </requirement>
+
+      <requirement name="C:Time">
+        <summary>
+          There is no oppurtunity to extend or modifiy the deadline in anyway, barring unforseen cirsumtances (meteor 
+          destroying the world, second coming, etc)
+        </summary>
+      </requirement>
+
+      <requirement name="C:Network">
+        <summary>
+          The network code needs to be able to handle input from many users and handle a network that is slow or unusable.
+        </summary>
+      </requirement>
+
+      <requirement name="R:Syntactic highlighting">
+        <summary>
+          Text highlighting for C# will be implemented if time permits. However, the deadline is not worth missing 
+          over colored text.
+        </summary>
+      </requirement>
+    </requirements>
+
+
+</doc>

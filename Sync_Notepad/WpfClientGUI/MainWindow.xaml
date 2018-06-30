@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfClientGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfClientGUI"
+        mc:Ignorable="d"
+        Title="Sync_Notepad" Height="480" Width="640" WindowState="Maximized" Icon="Sync-Icon.ico" Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="232*"/>
+            <RowDefinition Height="217*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="344"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <RichTextBox x:Name="richTextBoxText" Margin="10,5,5,40" Grid.Row="1" IsReadOnly="True" FontFamily="Consolas"  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Visible">
+            <FlowDocument LineHeight="1">
+                <Paragraph>
+                    <Run/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="textBoxMessage" HorizontalAlignment="Right" Height="23" Margin="0,0,77,10" VerticalAlignment="Bottom" Width="257" Grid.Row="1" MaxLength="160"/>
+        <Button x:Name="buttonSend" Content="Send" Margin="274,0,5,10" VerticalAlignment="Bottom" Grid.Row="1" Height="23" Click="buttonSend_Click" IsDefault="True"/>
+        <ListBox x:Name="listBoxUsers" Margin="10,31,5,5"/>
+        <RichTextBox x:Name="DocumentText" Grid.Column="1" Grid.RowSpan="2" Margin="5,31,10,10" FontFamily="Consolas" AcceptsTab="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextChanged="DocumentText_TextChanged" Block.LineHeight="1" PreviewKeyDown="DocumentText_PreviewKeyDown"/>
+        <ToolBar x:Name="toolBar" VerticalAlignment="Top" Grid.ColumnSpan="2" ToolBarTray.IsLocked="True" Height="26" Margin="0,0,-0.4,0">
+            <Menu>
+                <MenuItem Header="File">
+                    <MenuItem Header="New" Click="newFile_Click"/>
+                    <MenuItem Header="Open" Click="openFile_Click"/>
+                    <MenuItem x:Name="save_click" Header="Save" Click="saveFile_click"/>
+                    <MenuItem Header="Exit" Click="exitButton_click"/>
+                </MenuItem>
+                <MenuItem Header="Lock">
+                    <MenuItem x:Name="lockRequest" Header="Request Lock" Click="lockRequest_Click" />
+                    <MenuItem x:Name="releaseLock" Header="Release Lock" Click="releaseLock_Click" />
+                </MenuItem>
+                <MenuItem Header="Confirm Users">
+                    <MenuItem x:Name="confirmUsers" Header="Confirm Users" Click="confirmUsers_Click"/>
+                </MenuItem>
+            </Menu>
+        </ToolBar>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e49e74a9-29fb-4a7d-8967-49aef661d240" name="server" linkedPackageId="7879b59d-f419-4a71-81e7-5631777e39a5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="42facf0f-23a8-4ef1-82d0-2234ddef263d" name="Server" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71ab0521-473a-4818-bdff-daccb053fcc6" />
+        <targetEnds>
+          <association Id="7550514a-133d-4e9b-a7b7-1acaea30243c" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Receive login information" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8d870c7a-3022-4798-a789-4adfebd13520" LastKnownName="Receive login information" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5db0d6e8-ca4e-433c-89e7-e385b94cd96d" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="23265e0c-a4f3-40d7-a281-9227f092c597" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f216891-b199-4728-9902-1674689bb14c" name="Receive login information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e3c1ca9-783c-4581-93c8-0e7c3e4af7cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="adb09313-336a-4721-bfb0-5038cf200a36" />
+          </association>
+          <association Id="f3fb3fa9-4896-4b22-8b29-c54a302cd22b" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Receive request for access" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="805d9f97-bf24-47aa-ad94-1c9b498d73c0" LastKnownName="Receive request for access" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9dcae8d1-d778-45ff-ba12-de545252efab" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="39bd4495-fd94-4d4d-bcf0-3bf539aaaba9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4dfa976-910e-41ce-9dc1-8d2933d0fa23" name="Receive request for access" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="41ea0547-4e87-48bf-8492-b7fe8e71487b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5f6f2e99-686e-4f3d-9630-c734cec18a6d" />
+          </association>
+          <association Id="71b1d2ea-07a9-460d-89e0-61301ab8ea05" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Receive nonfilegroup authentication " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c326f78b-cf1a-4cb9-a3d6-ee5a3ff6439e" LastKnownName="Receive nonfilegroup authentication " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0f343c5-6fd1-4bac-bc3c-0f252d88e23f" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d38f3928-6b67-4afa-9db9-d77c1adc9920" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd3b19f5-b7a9-42f4-b578-067801ba62fd" name="Receive nonfilegroup authentication " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d15992d7-c387-49b0-986b-85f02c07e3cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7442062a-9925-4313-8bd1-ae4c675d00a1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" name="Subsystem2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="54c409f5-4212-47bc-b353-5fb0ab7aabc4" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="8d870c7a-3022-4798-a789-4adfebd13520" name="Receive login information" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4a916552-b53d-47e5-943b-db0e86275846" />
+        <targetEnds>
+          <association Id="3b669c68-8861-420d-ac18-2f8b6e65932d" isDerived="false" sourceEndRoleName="Receive login information" targetEndRoleName="Accept login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5c050192-d596-4643-888f-aaf0d03879b6" LastKnownName="Accept login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd0964d0-26a8-4a9f-8731-954111689e66" name="Receive login information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0ddd738e-9796-4b08-817e-e2884c5ef4a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="118d86ad-f069-4aa4-bbfe-dd96b2e93576" name="Accept login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7fc33ed9-9664-4dde-ac81-953bb4fad30e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2ee4949d-d7bd-4f3e-aa0d-cab79b00fa7f" />
+          </association>
+          <association Id="85872995-9d25-4b1f-bbe4-52d503642065" isDerived="false" sourceEndRoleName="Receive login information" targetEndRoleName="Deny login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b2705335-0ad9-45b3-bd0f-f033182d0295" LastKnownName="Deny login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="135246e8-a878-4f1e-83cc-c1fdce085c57" name="Receive login information" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3485758b-951f-4e52-808d-81cca39cadae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="82498ba9-4596-416e-8aba-b630c57c4a08" name="Deny login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fa9a00a4-d18b-49c4-bc8a-a490a4e7702b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="533be189-67fb-4a20-abff-de67dddf547e" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="805d9f97-bf24-47aa-ad94-1c9b498d73c0" name="Receive request for access" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dd4e883a-2855-42cd-b628-23057ef000ef" />
+        <targetEnds>
+          <association Id="61c6fc4c-a9f9-44a7-99d4-5b43b968eb2d" isDerived="false" sourceEndRoleName="Receive request for access" targetEndRoleName="forward to filegroup admin" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="406a7fe6-6550-4ec0-bac0-d9a8ebd7edb8" LastKnownName="Forward to filegroup leader" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fbe6511e-86fc-4273-bc6d-dbd96e0753f1" name="Receive request for access" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5dcf2744-be05-42e7-a22b-4b30e49e13f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f073c55-c1e9-4550-9223-c85cf9cfec38" name="forward to filegroup admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3fe2403e-691f-4dea-8dc8-6dd77f086d62" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="85bb6985-4224-4a98-bb64-e6a8e8298c92" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5c050192-d596-4643-888f-aaf0d03879b6" name="Accept login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a115f38c-36e9-4782-bde6-662f3a70beea" />
+        <targetEnds>
+          <association Id="7d07059f-2dbd-4712-ac31-8173b8b9f461" isDerived="false" sourceEndRoleName="Accept login" targetEndRoleName="Handle Syncronization" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2e588c78-0d05-4b84-b72f-002120123651" LastKnownName="Handle syncronization" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7f89766e-18e2-4bdd-b4de-3b1c6143ade2" name="Accept login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4983f998-ecd6-4d9c-b89f-648d6d75d418" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0919f8ce-f0bf-412a-b827-bb651a27b7b9" name="Handle Syncronization" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c2c2e780-bc91-4fcf-a284-c808842eaf77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ae68c736-d034-4f59-b8a3-cbca666c4d92" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b2705335-0ad9-45b3-bd0f-f033182d0295" name="Deny login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c58be88d-9935-4a52-bb27-91199fa5e0bb" />
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="406a7fe6-6550-4ec0-bac0-d9a8ebd7edb8" name="Forward to filegroup leader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8fabd5f0-e819-4f0a-b9b8-1ba82882c5cf" />
+        <targetEnds>
+          <association Id="9bedebf2-fe71-4aaa-b96b-b77fdb1ca33b" isDerived="false" sourceEndRoleName="forward to filegroup admin" targetEndRoleName="Actor1" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="fd1fe6df-9850-4a77-8e5c-db02cf5b361d" LastKnownName="File Group Leader" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c49a148d-4262-4f04-8517-10b9b117062b" name="forward to filegroup admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="32fcd0e7-0002-462a-9aab-382ce3969ed7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59d6f894-cdea-43e0-b6cf-d916d5a0202e" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aaced716-e2cd-4622-bce7-bdb20a67c998" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="36a2d842-9d96-42d9-af94-4c70d7afdc1a" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="fd1fe6df-9850-4a77-8e5c-db02cf5b361d" name="File Group Leader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e6e5391-78cd-4de1-9af1-a4b423837126" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="c326f78b-cf1a-4cb9-a3d6-ee5a3ff6439e" name="Receive nonfilegroup authentication " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb5e43b0-e093-48e6-9b65-f96ff97b0303" />
+        <targetEnds>
+          <association Id="be833a85-969a-4c7c-bc11-80f2022c2004" isDerived="false" sourceEndRoleName="Receive nonfilegroup authentication " targetEndRoleName="Deny authentication" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fcf86d12-ef7a-4aa3-ae6b-bec2d7c1b690" LastKnownName="Deny authentication" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="471fd512-e661-48a3-8640-955c6f4c9af7" name="Receive nonfilegroup authentication " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ff858e83-92ca-46fb-80a3-c2bb221bd5b3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb19a973-82ab-4c82-8421-a2a34421705d" name="Deny authentication" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e9589280-c539-45a9-8a1f-84824f0d6600" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb5631e1-62b5-4d64-a961-eda95a2fbfb8" />
+          </association>
+          <association Id="4d35516d-bad1-407b-bf73-3f80eea93424" isDerived="false" sourceEndRoleName="Receive nonfilegroup authentication " targetEndRoleName="Approve authentication" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="55aaf52e-f0fa-4122-8560-4ecd24e80409" LastKnownName="Approve authentication" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a616fa65-b54b-4b67-95c3-a5e40583ff2e" name="Receive nonfilegroup authentication " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="10b6792b-13eb-444b-85e3-3a32840e1c3e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec8b605a-1b35-4d73-9c01-3e989cc0fc4f" name="Approve authentication" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5e468086-5c67-4998-be47-68f48e7b01ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="95ff3023-97f6-4555-82ae-68d3d25d6a2a" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fcf86d12-ef7a-4aa3-ae6b-bec2d7c1b690" name="Deny authentication" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="176d8d9a-096b-48f5-803d-696b63be192e" />
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="55aaf52e-f0fa-4122-8560-4ecd24e80409" name="Approve authentication" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b991ad09-dde3-4bea-97fb-0835c5ef457a" />
+        <targetEnds>
+          <association Id="2f543726-d2b3-4b8a-b1a4-dc9118e1c3fa" isDerived="false" sourceEndRoleName="Approve authentication" targetEndRoleName="Allow editing of filegroup" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="36c5bc7f-1322-4937-9d90-c23a625e91df" LastKnownName="Allow editing of filegroup" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f062b9d9-4844-4e3f-b436-2e727297460a" name="Approve authentication" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="02615622-78c4-4365-a39b-647befcd89e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d769f8f-f328-4b9c-91d8-5877233074a2" name="Allow editing of filegroup" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="88b5573b-845e-4f1e-8386-0c73f1b471df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="63d5a7d7-020e-4951-960a-a483c0cda294" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="36c5bc7f-1322-4937-9d90-c23a625e91df" name="Allow editing of filegroup" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e43d375c-f050-4d9e-a08d-63b577b67b35" />
+        <targetEnds>
+          <association Id="2d8cf55d-088f-49d0-8ef2-6bbe30654222" isDerived="false" sourceEndRoleName="Allow editing of filegroup" targetEndRoleName="Actor1" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="fd1fe6df-9850-4a77-8e5c-db02cf5b361d" LastKnownName="File Group Leader" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e1db0505-33fb-44a0-9a7e-9260d79d4452" name="Allow editing of filegroup" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fa1ad578-c701-4cdb-b970-bfcffde95113" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d5e4c98-d5e3-4c34-b214-6ae760e0ee44" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1856ede3-d451-42ea-84ad-6bbf00d0ac1c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="32beeec0-a1b6-4e6e-ab0e-618590a88ee6" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2e588c78-0d05-4b84-b72f-002120123651" name="Handle syncronization" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c661d9e-d2b8-4b92-b12a-b8c93538c773" />
+        <subjects>
+          <subsystemMoniker Id="7a2f37da-64b8-4cf8-8773-252f0c9dffa3" LastKnownName="Subsystem2" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="7879b59d-f419-4a71-81e7-5631777e39a5" name="UseCaseModelingProject">
+    <elementDefinition Id="c5585487-279f-4447-9a46-275cb47f9ef2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d995893a-d450-4c8c-820b-1481539e7615">
+        <profileInstance Id="31e9648f-243b-4ba7-836d-cb51298a7c91" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a21fef83-d7a2-4735-a8eb-b13933493197">
+        <profileInstance Id="49166692-d2a2-4046-a473-15b3897fd10b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0f1a4f60-2bd5-4e09-963c-114d80f16008" name="UMLUseCaseDiagram1" linkedPackageId="2ad26a49-1383-4378-ab84-b83aa679fcd4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="4ca89161-e8b2-4978-92c0-b56c6d02daae">
+      <elementDefinition Id="4a21fcaf-c235-4ce5-96d7-00f6f99847d8" />
+      <body>See: Leader Subsystem</body>
+      <annotatedElements>
+        <useCaseMoniker Id="fd3cadac-8dac-47f4-af46-0d712bff6c0c" LastKnownName="Request access" />
+      </annotatedElements>
+    </comment>
+    <comment Id="cbd4c533-f094-4028-9d13-45ead60cb393">
+      <elementDefinition Id="d246e89e-ff45-4245-ab5f-a4befd943db1" />
+      <body>See this document for all actions that involve the server.</body>
+      <annotatedElements>
+        <artifactMoniker Id="1a8ad74a-fc4e-434a-ac8f-6d23b06cc6da" LastKnownName="server.usecasediagram" />
+      </annotatedElements>
+    </comment>
+    <comment Id="fcc3a505-cd5f-44a5-bc39-678588edb63a">
+      <elementDefinition Id="e72cfe92-edcf-4f24-b26c-7956cffc5b79" />
+      <body>This is the subsystem for basic user interaction.
+</body>
+      <annotatedElements>
+        <subsystemMoniker Id="09c8c068-7803-4910-b91a-fc3a7ccf768a" LastKnownName="Server" />
+      </annotatedElements>
+    </comment>
+    <comment Id="0b89f956-8d69-4f9d-8bcf-df9e7b2526d9">
+      <elementDefinition Id="0d6d1265-1835-4d81-839e-494508eee068" />
+      <body>This subsytem handles admin privlidges releated to managing a group of files.</body>
+      <annotatedElements>
+        <subsystemMoniker Id="42f73845-0602-44b4-85c3-4a330a9b3729" LastKnownName="Leader" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="958d083b-35d5-4a17-a435-953235ff2d6b" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6754c1c2-dbb3-4388-9248-3b4948e5d567" />
+        <targetEnds>
+          <association Id="e8ed4230-b50c-4130-9be1-ce94eb9a3dd6" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Connect to server" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e822de9f-8dd2-4e86-a9c2-79703f5d9760" LastKnownName="Connect to server" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e3116e4b-c458-441c-808c-e77214db4f32" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="354f5471-880d-4c3b-abf1-4bfe961fa425" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69d2577a-cc8b-4b0e-be2a-1e044b587adc" name="Connect to server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6445db14-e9d1-44ff-a7f3-5b8c62a77a07" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e52b2ae6-1f5c-4f1c-b81b-ea713896c8b3" />
+          </association>
+          <association Id="48952dbe-e56e-459f-b33e-df67853b390f" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Connect and authenticate with server" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="78abe649-71cb-41f6-938b-2f594478e4d1" LastKnownName="Connect and authenticate with server" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="737d1ca5-18c3-49d7-a575-07631c8e371d" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f040a317-356d-4739-b883-109df84763c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16f019a9-4421-4866-83ed-d6177c073b75" name="Connect and authenticate with server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c9d54295-21e1-43db-aa0b-c9148e2745c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="45d484a7-1fb9-4994-9106-233656f25f69" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="09c8c068-7803-4910-b91a-fc3a7ccf768a" name="Server" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dcd8f591-9234-4510-b464-899345bb93aa" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="e822de9f-8dd2-4e86-a9c2-79703f5d9760" name="Connect to server" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb79abba-1026-400b-ab6a-9131cd5030c6" />
+        <targetEnds>
+          <association Id="10dee4d8-2c78-4dcc-abda-848fe098b408" isDerived="false" sourceEndRoleName="Connect to server" targetEndRoleName="login to server" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f09383bd-8a16-405d-ae94-7d66d2265f99" LastKnownName="Login to server" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b01979aa-9f0f-4271-a542-bbe1f363c268" name="Connect to server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cd0ce7c9-aa98-4c4e-86ac-b132fc9db07a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86244d0f-d719-4f25-a3f1-a1916ecc4f4d" name="login to server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05e277d4-457a-4392-b57b-fccbc22f13be" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="16880921-0a3a-4eae-bf37-de6403cc7fdf" />
+          </association>
+          <association Id="c240ccf1-5723-4ebd-9fcb-e3fd3b07b291" isDerived="false" sourceEndRoleName="Connect to server" targetEndRoleName="Request access" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fd3cadac-8dac-47f4-af46-0d712bff6c0c" LastKnownName="Request access" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95236c20-4feb-41d8-9523-c4ac79036b5b" name="Connect to server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6879042b-055c-45c8-8ec9-2708fd795099" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="10a1c6b3-d26d-4b03-8ae6-58216b909bfc" name="Request access" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ef5d0aea-4e7b-426e-bda6-faef52f081d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bf8e4bb7-7ae7-4ba3-8c11-146b8d547c52" />
+          </association>
+          <association Id="a37cbdbd-b680-4f7a-b5c1-dc98db70b234" isDerived="false" sourceEndRoleName="Connect to server" targetEndRoleName="Server" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="bcedda2c-c525-49fb-838f-7bd329d24664" LastKnownName="Server" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b38ec80e-595c-48bc-bae6-a8af729d62d6" name="Connect to server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="298505ae-6236-482a-8991-351820b07148" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e92385bf-def2-41a6-a47b-f24429ebb119" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e4215a7e-56c2-4adb-8380-af8523fe135e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7701da47-e510-4da9-9092-750d02d4ecdc" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="09c8c068-7803-4910-b91a-fc3a7ccf768a" LastKnownName="Server" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fd3cadac-8dac-47f4-af46-0d712bff6c0c" name="Request access" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="302497c4-61e3-4ade-b362-06a1fa7ac369" />
+        <subjects>
+          <subsystemMoniker Id="09c8c068-7803-4910-b91a-fc3a7ccf768a" LastKnownName="Server" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f09383bd-8a16-405d-ae94-7d66d2265f99" name="Login to server" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bd7f60ab-52c2-4fed-a3d5-2c93a04ee2ee" />
+        <targetEnds>
+          <association Id="e7e056e8-1a13-47c7-b7c2-aebd925aa9a4" isDerived="false" sourceEndRoleName="login to server" targetEndRoleName="Communicate with other users" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="edf21141-9ead-4f1c-8c51-680832626d55" LastKnownName="Communicate with other users" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="428b2f65-2d8c-4c98-9d3a-3cea1fb297ba" name="login to server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4dae0df2-b709-401a-8782-8ecb7306e9ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8dd71e22-26b7-4228-8d00-3036b2cfffdb" name="Communicate with other users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a28caf73-97b6-4849-831d-893ce9e102dd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aece3a0b-db47-4684-842b-3988f08fb09c" />
+          </association>
+          <association Id="47c4102c-d731-407c-ae51-29714c4ee643" isDerived="false" sourceEndRoleName="login to server" targetEndRoleName="manage documents" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8446f51f-a310-4896-871b-6706783de07f" LastKnownName="Manage documents" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fb6c960-fae9-4340-95f4-50db9aae361a" name="login to server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8143b629-b1df-4af4-b4bc-5b18f5c3b825" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e3995e61-6ec8-431f-9bc4-492dec607043" name="manage documents" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2f1c4e83-96c5-4ec6-a97c-1efd176cdbf3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a014a4ce-b06e-4b4b-a5d3-10d24a15a1c0" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="09c8c068-7803-4910-b91a-fc3a7ccf768a" LastKnownName="Server" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8446f51f-a310-4896-871b-6706783de07f" name="Manage documents" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e44a12c8-8d10-4bc4-9d1f-fcbd42a16567" />
+        <targetEnds>
+          <association Id="54edd240-ca4d-4a57-b85f-49e98f2c53f2" isDerived="false" sourceEndRoleName="Manage documents" targetEndRoleName="FileandDocManagemente.usecasediagram" isLeaf="false" isAbstract="false">
+            <artifactMoniker Id="4dfe4866-c25c-417a-8fee-5a4ea7aa10a9" LastKnownName="FileandDocManagemente.usecasediagram" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7f88009b-507e-463d-a8fe-0f1ae3ec5829" name="Manage documents" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc3a7467-e109-4406-a7f3-3e4e2d3f93e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87305352-450b-4604-9708-29538a045546" name="FileandDocManagemente.usecasediagram" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1ff4d38a-40ee-4523-82ed-7da5192aa2ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="47e8ba7c-73b8-4a7e-a24e-a847dda2df46" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="09c8c068-7803-4910-b91a-fc3a7ccf768a" LastKnownName="Server" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="edf21141-9ead-4f1c-8c51-680832626d55" name="Communicate with other users" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5bf56761-b5a0-460d-8441-88360af52bdf" />
+        <targetEnds>
+          <association Id="47bf8e68-1063-4131-9857-8db5c4427e35" isDerived="false" sourceEndRoleName="Communicate with other users" targetEndRoleName="TextChat.usecasediagram" isLeaf="false" isAbstract="false">
+            <artifactMoniker Id="0c863f86-9f8e-48c3-a114-9622edd0ce4b" LastKnownName="TextChat.usecasediagram" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="211a4530-72a4-49bc-84a6-96157ff68c65" name="Communicate with other users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6211f711-a429-497e-ad56-8dc64c6f8c2e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc7da69d-8033-4696-b0d0-853efd2ce46c" name="TextChat.usecasediagram" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="55515455-486a-4c31-8ccd-56a1b21a69d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="56d931d1-5da0-4276-b209-d52d0dfb2c62" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="09c8c068-7803-4910-b91a-fc3a7ccf768a" LastKnownName="Server" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="42f73845-0602-44b4-85c3-4a330a9b3729" name="Leader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e510b829-8fb1-4551-95fc-8d0bae139dd7" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="78abe649-71cb-41f6-938b-2f594478e4d1" name="Connect and authenticate with server" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="678085dd-699a-4728-bf5e-69e20b3aba1f" />
+        <targetEnds>
+          <association Id="3a00cd6b-bac8-46f2-b19b-b8cbf1d078ce" isDerived="false" sourceEndRoleName="Connect and authenticate with server" targetEndRoleName="Create a new filegroup" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="294883b5-8e1e-4b11-bd22-9ce10b9948c8" LastKnownName="Create/delete a filegroup" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb13a9ed-3f88-42db-a7f9-f3cf523c06b8" name="Connect and authenticate with server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3ac973c3-1b0e-4074-8b4d-73ce254298e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b9108bf-c772-4877-bef1-da7fd85d400b" name="Create a new filegroup" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2631675c-86e6-4e81-a948-5c282090775d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a89ddd0d-3cc1-4123-a2f3-e6577385cde8" />
+          </association>
+          <association Id="e22ffea2-c3e5-4f5c-9a4e-fb3bd8a9b2ec" isDerived="false" sourceEndRoleName="Connect and authenticate with server" targetEndRoleName="Connect to existing filegrou" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aca4e9dc-077f-4e2a-9f6e-ff6f25e2cf7f" LastKnownName="Connect to existing filegroup" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="650263ba-5013-4cc7-bb2e-7a07ccc49268" name="Connect and authenticate with server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="00e1d898-39df-4859-9060-102209fdaa43" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25a8cea3-825a-48c5-af15-9c8b58fdffd8" name="Connect to existing filegrou" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4f1f21e6-0299-471d-904b-3f8edd16dd26" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5bef4e8f-e975-413d-9fc9-c5ccb033dc64" />
+          </association>
+          <association Id="9d08f4e2-cc73-4a53-8110-16a0523c1720" isDerived="false" sourceEndRoleName="Connect and authenticate with server" targetEndRoleName="Server" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="bcedda2c-c525-49fb-838f-7bd329d24664" LastKnownName="Server" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b79dea04-ba8f-4e39-bc9c-4f9233624b02" name="Connect and authenticate with server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e3893096-e4a1-406e-a103-037f2ba7774e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e44faa43-3151-4b9e-896f-4d7036fb5654" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ab0221b-e069-48d3-ad41-12e0ddec37dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7e4e7ccb-1013-4715-9b6e-cc6bf844ee36" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="42f73845-0602-44b4-85c3-4a330a9b3729" LastKnownName="Leader" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="294883b5-8e1e-4b11-bd22-9ce10b9948c8" name="Create/delete a filegroup" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="756c3260-6340-4629-9c7d-72a1aac5fe9f" />
+        <extendedCases>
+          <extend Id="c03813e7-b8c6-4a29-84be-00e3204c18dd">
+            <useCaseMoniker Id="aca4e9dc-077f-4e2a-9f6e-ff6f25e2cf7f" LastKnownName="Connect to existing filegroup" />
+            <elementDefinition Id="b6551ecb-d361-42a6-b862-bea0a97662fc" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="42f73845-0602-44b4-85c3-4a330a9b3729" LastKnownName="Leader" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="aca4e9dc-077f-4e2a-9f6e-ff6f25e2cf7f" name="Connect to existing filegroup" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5a901a13-96e4-46a4-81b1-97e82c15c533" />
+        <targetEnds>
+          <association Id="f744f7aa-91a0-4adc-8302-11acb93ccce2" isDerived="false" sourceEndRoleName="Connect to existing filegroup" targetEndRoleName="Manage users" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="179e6cde-07fe-4595-b948-9a74c3a0f4cc" LastKnownName="Manage users" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="660c98da-8c17-408b-a689-8b01c9a33179" name="Connect to existing filegroup" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a8bf96e4-ed1d-43ff-9d77-4f61996df3bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="91ccd079-070c-4c64-bd9e-3a903d40f966" name="Manage users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="743ebdda-7820-4253-8491-ad073f6f4032" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5d77a291-6e7f-47a3-8418-b7507c35d59c" />
+          </association>
+          <association Id="a967c926-cf20-4c7b-9b1e-5574937491b4" isDerived="false" sourceEndRoleName="Connect to existing filegroup" targetEndRoleName="Lock files" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f1109d4a-89d7-40fd-b296-d15afe9cb2f5" LastKnownName="Lock files" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="15d5229f-b3b0-4edc-b0c1-727bfee09fd2" name="Connect to existing filegroup" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a573c03f-a200-4d70-b994-b5f270852c3a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1c57045b-ad3b-4cc5-bcd6-1b0691aaa9e8" name="Lock files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6b6637b4-526a-44d9-9999-1f9df7be2886" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5ad55f0c-1d7f-40fa-905b-04ea1b3ef759" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="42f73845-0602-44b4-85c3-4a330a9b3729" LastKnownName="Leader" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="179e6cde-07fe-4595-b948-9a74c3a0f4cc" name="Manage users" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a739693a-053f-4ab8-ae8e-eb24f5ebd81f" />
+        <targetEnds>
+          <association Id="0beb2d12-03a7-4e52-9bd8-980eb7d06ad7" isDerived="false" sourceEndRoleName="Manage users" targetEndRoleName="Confirm access request" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9f372af4-2e32-42a0-a3bf-ff7c31cff5d0" LastKnownName="Confirm access request" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6861d17-c76a-4c36-951d-128e4fc1da4d" name="Manage users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0cd028bd-37d2-4e79-a794-157436cf8523" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8c6a2ec6-694d-4165-91a2-a65c6749b3e2" name="Confirm access request" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="088af763-5399-425f-af31-1a85d438f0a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="819933b1-a1a6-4538-90d3-14022505ecdd" />
+          </association>
+          <association Id="d2ad3fbb-50ae-44bd-8e0d-8833a67f8ced" isDerived="false" sourceEndRoleName="Manage users" targetEndRoleName="Remove users" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="269c5591-163d-42fb-813a-ff4389f50c5f" LastKnownName="Remove users" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1205c8be-3e0c-4b69-b97c-6b2ce02ff671" name="Manage users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fc2ade34-3660-4d9a-991f-b06241cb8151" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1562154-669d-46f4-a7f8-a54a33ed6e2a" name="Remove users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="221b0c02-82c3-4617-a073-3b34959caa7c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e2d25548-b82e-4336-b88d-02fa6c561c2f" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="42f73845-0602-44b4-85c3-4a330a9b3729" LastKnownName="Leader" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f1109d4a-89d7-40fd-b296-d15afe9cb2f5" name="Lock files" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c977d40-3884-4e7a-91d1-8d3c77c3c241" />
+        <subjects>
+          <subsystemMoniker Id="42f73845-0602-44b4-85c3-4a330a9b3729" LastKnownName="Leader" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9f372af4-2e32-42a0-a3bf-ff7c31cff5d0" name="Confirm access request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47306051-09e7-4696-8b19-3db6c89a568a" />
+        <subjects>
+          <subsystemMoniker Id="42f73845-0602-44b4-85c3-4a330a9b3729" LastKnownName="Leader" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="269c5591-163d-42fb-813a-ff4389f50c5f" name="Remove users" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="298e7898-0a65-4016-83f8-4b00289b0893" />
+        <subjects>
+          <subsystemMoniker Id="42f73845-0602-44b4-85c3-4a330a9b3729" LastKnownName="Leader" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <artifact Id="0c863f86-9f8e-48c3-a114-9622edd0ce4b" name="TextChat.usecasediagram" isAbstract="false" isLeaf="false" fileName="UseCaseModelingProject\TextChat.usecasediagram">
+        <elementDefinition Id="ba189d5e-fabb-4fe8-a48c-a6f6d0d40054" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="4dfe4866-c25c-417a-8fee-5a4ea7aa10a9" name="FileandDocManagemente.usecasediagram" isAbstract="false" isLeaf="false" fileName="UseCaseModelingProject\FileandDocManagemente.usecasediagram">
+        <elementDefinition Id="584579ed-a4e9-4e1c-881e-735dcd99b72a" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="1a8ad74a-fc4e-434a-ac8f-6d23b06cc6da" name="server.usecasediagram" isAbstract="false" isLeaf="false" fileName="UseCaseModelingProject\server.usecasediagram">
+        <elementDefinition Id="934c84e0-40c0-4d9b-8461-4311edf0c3a8" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="bcedda2c-c525-49fb-838f-7bd329d24664" name="Server" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e3b31eb3-3a82-4b9e-a3af-d6865ce538d3" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2ad26a49-1383-4378-ab84-b83aa679fcd4" name="UseCaseModelingProject">
+    <elementDefinition Id="c5585487-279f-4447-9a46-275cb47f9ef2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2172eacd-a801-4bf9-afa4-a556ec823947">
+        <profileInstance Id="3fba4cf9-afa0-45fa-92b6-6e0c61ade588" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="25164f66-db77-4f58-87ea-7dcf5c6c030b">
+        <profileInstance Id="8b2c4a86-17ef-42a0-89c7-472e6ae6bcc5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

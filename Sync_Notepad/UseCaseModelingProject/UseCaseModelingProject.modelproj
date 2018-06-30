@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9bd234ae-f997-45d8-bca6-aa67149e4f26}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>UseCaseModelingProject</Name>
+    <RootNamespace>UseCaseModelingProject</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="FileandDocManagemente.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FileandDocManagemente.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>FileandDocManagemente.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="OldFiles\Client Notepad.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OldFiles\Client Notepad.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OldFiles\Client Notepad.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="OldFiles\MainActivityDiagram.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OldFiles\MainActivityDiagram.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OldFiles\MainActivityDiagram.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="OldFiles\MainProgram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OldFiles\MainProgram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OldFiles\MainProgram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="OldFiles\OverviewSequenceDiagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OldFiles\OverviewSequenceDiagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OldFiles\OverviewSequenceDiagram.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="OldFiles\Revised_Class_Diagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OldFiles\Revised_Class_Diagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OldFiles\Revised_Class_Diagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="OldFiles\serverdeprecated.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OldFiles\serverdeprecated.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OldFiles\serverdeprecated.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="OldFiles\UMLActivityDiagram1.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OldFiles\UMLActivityDiagram1.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OldFiles\UMLActivityDiagram1.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Revised_Class_Diagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Revised_Class_Diagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Revised_Class_Diagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="TextChat.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TextChat.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TextChat.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLActivityDiagramRegUser.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLActivityDiagramRegUser.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLActivityDiagramRegUser.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLActivityDiagramServer.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLActivityDiagramServer.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLActivityDiagramServer.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLActivityDiagramLeader.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLActivityDiagramLeader.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLActivityDiagramLeader.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLActivityDiagramAdmin.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLActivityDiagramAdmin.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLActivityDiagramAdmin.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramAdministrator.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramAdministrator.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramAdministrator.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserConnect_Disconnect_Server.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserConnect_Disconnect_Server.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramRegUserConnect_Disconnect_Server.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserConnectFileGroup.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserConnectFileGroup.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramRegUserConnectFileGroup.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserLogin_Logoff.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserLogin_Logoff.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramRegUserLogin_Logoff.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserModifyFile.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserModifyFile.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramRegUserModifyFile.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerConfirmUser.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerConfirmUser.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramServerConfirmUser.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerSetPass.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerSetPass.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramServerSetPass.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerFileGroup.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerFileGroup.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramServerFileGroup.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerComm.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerComm.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramServerComm.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerModUser.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramServerModUser.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramServerModUser.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserTextMessaging.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserTextMessaging.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramRegUserTextMessaging.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserRegServer.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagramRegUserRegServer.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagramRegUserRegServer.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLUseCaseDiagram1.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLUseCaseDiagram1.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLUseCaseDiagram1.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="userConnections.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="userConnections.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>userConnections.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\UseCaseModelingProject.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="OldFiles" />
+  </ItemGroup>
+</Project>

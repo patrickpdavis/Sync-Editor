@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-04-06T13:19:11" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Diagnostic" Text="ProjectPath = ..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj" />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Medium" Text="UseCaseModelingProject's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'UseCaseModelingProject::OpenDocument' -  (Class), 'UseCaseModelingProject::RemoteProgram' -  (Class), 'UseCaseModelingProject::BunchoFiles' -  (Class), 'UseCaseModelingProject::serverLoginGUI' -  (Class), 'UseCaseModelingProject::ClientProgram' -  (Class), 'UseCaseModelingProject::BunchGUI' -  (Class), 'UseCaseModelingProject::UserCollection' -  (Class), 'UseCaseModelingProject::TextMessage' -  (Class), 'UseCaseModelingProject::Users' -  (Class) " />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Medium" Text="'UseCaseModelingProject::OpenDocument' -  (Class) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\OpenDocument.cs" />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Medium" Text="'UseCaseModelingProject::RemoteProgram' -  (Class) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\RemoteProgram.cs" />
+  <Message Timestamp="2016-04-06T13:19:12" Importance="Medium" Text="'UseCaseModelingProject::BunchoFiles' -  (Class) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\BunchoFiles.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::serverLoginGUI' -  (Class) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\serverLoginGUI.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::ClientProgram' -  (Class) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\ClientProgram.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::BunchGUI' -  (Class) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\BunchGUI.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::UserCollection' -  (Class) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\UserCollection.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::TextMessage' -  (Class) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\TextMessage.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::Users' -  (Class) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\Users.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="ProjectPath = ..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="UseCaseModelingProject's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'UseCaseModelingProject::remoteReturn' -  (Enumeration) " />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::remoteReturn' -  (Enumeration) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\remoteReturn.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="Name = InterfaceTemplate" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="ProjectPath = ..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="UseCaseModelingProject's Text Template Binding: 'InterfaceTemplate' will apply InterfaceTemplate.t4 to: 'UseCaseModelingProject::IMainNetwork' -  (Interface), 'UseCaseModelingProject::IBunchoFiles' -  (Interface), 'UseCaseModelingProject::IUserCollectionRO' -  (Interface) " />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::IMainNetwork' -  (Interface) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\IMainNetwork.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::IBunchoFiles' -  (Interface) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\IBunchoFiles.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="'UseCaseModelingProject::IUserCollectionRO' -  (Interface) : success (file replaced) - C:\Users\nonam\Source\Repos\Sync-Notepad-Editor\Sync_Notepad\UseCaseModelingProjectLib\GeneratedCode\IUserCollectionRO.cs" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="ProjectPath = ..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Medium" Text="UseCaseModelingProject's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'UseCaseModelingProject::OpenDocument' -  (Class), 'UseCaseModelingProject::RemoteProgram' -  (Class), 'UseCaseModelingProject::BunchoFiles' -  (Class), 'UseCaseModelingProject::serverLoginGUI' -  (Class), 'UseCaseModelingProject::ClientProgram' -  (Class), 'UseCaseModelingProject::BunchGUI' -  (Class), 'UseCaseModelingProject::UserCollection' -  (Class), 'UseCaseModelingProject::TextMessage' -  (Class), 'UseCaseModelingProject::Users' -  (Class) " />
+  <Message Timestamp="2016-04-06T13:19:13" Importance="Diagnostic" Text="'UseCaseModelingProject::OpenDocument' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::RemoteProgram' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::BunchoFiles' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::serverLoginGUI' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::ClientProgram' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::BunchGUI' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::UserCollection' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::TextMessage' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::Users' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="The selection included 15 elements which were not bound to a template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'4b411efd-e36b-42b7-a655-d917cb2399b6' -  (Comment): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'4268b376-021a-4cc9-a7a4-5397f885a0c3' -  (Comment): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'cfbc529f-5fca-4e49-a6df-d27ab19bc13a' -  (Comment): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'db14cecf-48e4-41ea-8098-b418b1dddd6e' -  (Comment): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (Association): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (Dependency): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (Dependency): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (Dependency): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="Diagnostic" Text="'UseCaseModelingProject::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-04-06T13:19:14" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

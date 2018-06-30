@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="fb35fd15-0736-49be-8be6-4d385bab896e" name="TextChat" linkedPackageId="e4ec7149-a439-44f5-a6aa-b78ee3a533b3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="d51ae0d6-f0e0-421d-926d-6f7c63cf2144">
+      <elementDefinition Id="18980d18-7b2c-4048-8110-e69c2e0ed011" />
+      <body>This subsystem handles the independent text based communication aspect of the program.</body>
+      <annotatedElements>
+        <subsystemMoniker Id="51db5a75-2f7a-4044-a4c6-7f667177f25d" LastKnownName="Independent text based chat" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="f6f62bc3-a331-4631-8d3d-2e372604eee8" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="56ad42ba-33ec-4375-94ba-021a0ef07c9c" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6de41f60-4a68-4652-b7de-fcf6aed459b6">
+          <propertyInstance Id="6e8e1e1e-33ad-4691-a83e-502bb12c8043" name="BaseName">
+            <elementDefinition Id="5b05cd05-40f8-496a-8dc0-0d2d040c848d" />
+          </propertyInstance>
+          <elementDefinition Id="65956887-a4da-463d-bdd8-10f60e1d6185" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0662123f-965f-40f0-b197-84e52cf70675">
+          <propertyInstance Id="8bfbaa14-d560-4473-81bb-c67f966b7a65" name="ClrAttributes">
+            <elementDefinition Id="acb8e865-7940-42f4-be97-889fdb83dc2c" />
+          </propertyInstance>
+          <elementDefinition Id="712646b1-a989-4b03-9ca4-5c38102f33dd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="44c8149d-e3ba-4f7a-a870-9f86ecf8760d">
+          <propertyInstance Id="d6ca38cc-b583-451e-bff5-c9711d9a3f70" name="Usings">
+            <elementDefinition Id="8e9d4129-82b1-4a17-93be-2d83be307346" />
+          </propertyInstance>
+          <elementDefinition Id="99a0a32f-ea08-4164-9a5e-97acd9079b88" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="8a1079aa-b01f-41ff-8031-5807cfad1f85" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="79cd3730-71f2-4759-832a-c17bfcd7d4d8" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="21cd13e4-d78c-4426-9a76-06f6ad9fae8d">
+          <propertyInstance Id="be9ae814-cfc6-4968-bd43-8dd1f82f4d90" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="29953ac6-5e64-4622-85bf-c1432a28f737" />
+          </propertyInstance>
+          <elementDefinition Id="6dd46b2c-77f5-4728-a6ec-c8195ff982c7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="60ffe7bd-df3a-4bfe-9a4c-a40077481a86">
+          <propertyInstance Id="8462b460-ef40-4845-8e61-c8860d40d150" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="426b7076-43e1-4511-bccd-21356bbc5fbc" />
+          </propertyInstance>
+          <elementDefinition Id="43ea9d04-69ba-427c-a962-7b6fc30f5976" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="16ad0266-3cc0-4549-8d25-026d5d724cbc">
+          <propertyInstance Id="d410b1b8-9959-4b02-b4e9-ce8b3c398d5a" name="ProjectPath" value="ClassTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj|EnumTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj|InterfaceTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj|StructTemplate=..\UseCaseModelingProjectLib\UseCaseModelingProjectLib.csproj">
+            <elementDefinition Id="5f7262bc-1f6d-4398-a01e-a9ec11d8436a" />
+          </propertyInstance>
+          <elementDefinition Id="b4c0987d-bd26-4461-b5e7-882c25b0aa5d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7a171c0c-d6c6-43ed-9f52-7d097f46026e">
+          <propertyInstance Id="482233c8-0277-4199-bfd0-62afc82f2ba4" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="1fd96d62-d9d2-43ce-86e9-b5f9166c755f" />
+          </propertyInstance>
+          <elementDefinition Id="cd6a9740-e061-4bcb-87d0-438aa2966aea" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1a14b119-b716-4346-a888-a2487c9c6616">
+          <propertyInstance Id="4b8f3bfa-af85-41d7-9637-0b6d431a1025" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="30fd1f85-cb53-486b-8b59-eb387ac2ace2" />
+          </propertyInstance>
+          <elementDefinition Id="ed79b080-0056-4c26-a2a1-d0cbbdcd521d" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="219a1f38-e358-45a8-921e-d7eeca32f32d">
+          <propertyInstance Id="3cf87ebc-f4f6-4afc-a0ab-d87b18aab938" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="066538f3-e5c9-41b7-84ce-31583c8cdcc0" />
+          </propertyInstance>
+          <elementDefinition Id="f2acfde8-ed28-45c6-9627-858d0e309576" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4b2c296c-8122-43f7-ab80-b796c3a33e50">
+          <propertyInstance Id="fd2f0be0-29e1-4c63-811f-e6d3267894a3" name="Parameters">
+            <elementDefinition Id="58017755-ab95-4043-8073-d13f5d5bbb3e" />
+          </propertyInstance>
+          <elementDefinition Id="86f761c5-198e-446c-afb9-6a5b0b54f4e0" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="cc3d83e1-d86b-4bf8-a512-115f555ac9e3">
+      <profileInstance Id="2450ffdd-f4b1-49b8-aab5-869ab7bcc423" name="CSharpProfile">
+        <elementDefinition Id="72a96e2d-5387-4b8a-89ac-c061304a9cbb" />
+      </profileInstance>
+      <elementDefinition Id="e84088be-214a-41ed-b71a-efed92e1e7e5" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c1183bb0-e148-44c6-8b55-e06323da1153">
+      <profileInstance Id="1d8571ab-d104-4c78-94fe-dd560de33922" name="TextTemplateBindings">
+        <elementDefinition Id="7f0aa099-20d5-4e4f-912a-e8c2bf9d94a4" />
+      </profileInstance>
+      <elementDefinition Id="4a898e71-9719-4d14-8d62-d20fae3350a4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9c5382f7-d64e-44e1-94d1-404559542ecc" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="debab545-9492-468c-beb2-ed73f614ba25" />
+        <targetEnds>
+          <association Id="de59210c-3c8e-45e7-a8ee-750659e06a17" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Send message" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f44519ce-387b-409a-ae1f-653b1d2e8973" LastKnownName="Send message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf42bfa6-5e94-44c4-9909-9efe06c79a0b" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0d742507-c3cc-4b92-8725-47b90a0982a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="76d75703-b087-4023-8cdc-c777d22adfde" name="Send message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d118c8f2-827a-46fe-a284-bc118b663663" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1740410f-c326-4073-b782-a0dba5a451ff" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="51db5a75-2f7a-4044-a4c6-7f667177f25d" name="Independent text based chat" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f4c84ba4-8cd8-440d-8144-90e760d868a3" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="f44519ce-387b-409a-ae1f-653b1d2e8973" name="Send message" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bbf1e434-88a3-4e1f-b5e3-87d152304d47" />
+        <targetEnds>
+          <association Id="e8d83285-88bc-4438-b7d1-8af3aa23aaf3" isDerived="false" sourceEndRoleName="Send message" targetEndRoleName="Server" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="0876e153-aea0-4152-8235-bc466384a7db" LastKnownName="Server" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3414f25a-8a7a-46c5-8f1b-56013ba65ec1" name="Send message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9eb66d62-8d2d-4b0f-a672-4e08f1d4b638" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a1a2e9d-b58e-46bd-bd63-8c2ecfd00d8a" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7b2d8a13-6c8a-4424-b315-9a00e74488c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="396c3b45-ceec-494c-8c3b-e991683d3470" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="51db5a75-2f7a-4044-a4c6-7f667177f25d" LastKnownName="Independent text based chat" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6fb1d894-77e4-472c-9bc6-f87ce84e4aac" name="Receive message" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="be16d6d9-d0af-424e-af2f-9c2502cc726b" />
+        <targetEnds>
+          <association Id="334bd4b0-1067-457b-831f-b4d4c4fafd1b" isDerived="false" sourceEndRoleName="Receive message" targetEndRoleName="User" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="9c5382f7-d64e-44e1-94d1-404559542ecc" LastKnownName="User" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bccc45e3-4082-4cce-8d87-9ee9ed964f2a" name="Receive message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="00e95d69-2e9c-45d4-9d24-a4828ed06a17" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4e936000-078f-4ede-86fa-112f1b73f589" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="10165d43-fcc9-439f-9dd2-d71da1a4ad51" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e61554bb-3c99-4ff0-9259-190c93cd91e4" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="51db5a75-2f7a-4044-a4c6-7f667177f25d" LastKnownName="Independent text based chat" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="0876e153-aea0-4152-8235-bc466384a7db" name="Server" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="50b0d593-7dde-4f30-8ce8-c4609b6771db" />
+        <targetEnds>
+          <association Id="fcd07068-5ec2-45f9-80d6-87568d971045" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Receive message" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6fb1d894-77e4-472c-9bc6-f87ce84e4aac" LastKnownName="Receive message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a88a3a5c-d6f7-4621-a8ca-8b12100d6ddb" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4274f48d-4585-442b-92bd-479f8cc71b3a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3fb1ca7a-39a3-4d00-b67f-41b57c85d689" name="Receive message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c12644db-1bcd-46b5-8051-0be3d59d8ebf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="17737337-a014-4b5a-88ef-15062e6ef928" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e4ec7149-a439-44f5-a6aa-b78ee3a533b3" name="UseCaseModelingProject">
+    <elementDefinition Id="c5585487-279f-4447-9a46-275cb47f9ef2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8de507bd-c3e5-4e24-9bff-b50de7b09d67">
+        <profileInstance Id="ef52f16f-8558-4a64-a708-d3dd29f5008e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="af60bd8d-2873-4034-94c8-716eaaec796e">
+        <profileInstance Id="84a8b0f2-6a58-4c1a-89f9-2a1bf52a4139" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

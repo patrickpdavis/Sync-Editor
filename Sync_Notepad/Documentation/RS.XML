@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="rs.xsl" ?>
+<doc>
+    <assembly>
+        <name>Online Photo Shop</name>
+        <version>1.1</version>
+    </assembly>
+
+    <requirements>
+
+        <requirement name="F:connect_user">
+            <summary>
+            One of the basic functions of this application involves communcation between
+            two devices.
+            </summary>
+        </requirement>
+
+        <requirement name="F:connect_server">
+            <summary>
+            The application can also be implemented in a way that allows for a server
+            to be used as an intermediary between clients that are not active concurrently.
+            </summary>
+        </requirement>
+
+        <requirement name="F:mamange_edit">
+            <summary>
+            Allows the user to open a document, contained in the syncronized file system,
+            to be edited as text.
+            </summary>
+        </requirement>
+
+        <requirement name="F:mamange_create">
+            <summary>
+            Allows the user to open a create a document on the syncronized file system.
+            </summary>
+        </requirement>
+
+        <requirement name="F:mamange_view">
+            <summary>
+            Displays an overall view of all files contained in a certain project.
+            </summary>
+        </requirement>
+
+        <requirement name="F:mamange_sync">
+            <summary>
+            Syncronized the files for the database.
+            </summary>
+        </requirement>
+
+        <requirement name="F:write_edit">
+            <summary>
+            Basic text editing functionality.
+            </summary>
+        </requirement>
+
+        <requirement name="F:write_save">
+            <summary>
+            Documents can be saved to file or to the server/peer filesystem.
+            </summary>
+        </requirement>
+
+        <requirement name="F:write_open">
+            <summary>
+            Allows the user to open a document to be edited as text.
+            </summary>
+        </requirement>
+
+        <requirement name="F:write_print">
+            <summary>
+            Basic printing functionality.
+            </summary>
+        </requirement>
+
+        <requirement name="F:write_color">
+            <summary>
+            Text based color highlighting for atleast one language.
+            </summary>
+        </requirement>
+
+        <requirement name="F:text_sync">
+            <summary>
+            Realtime text syncronization between one or more users.
+            </summary>
+        </requirement>
+
+        <requirement name="R:connect_secure">
+            <summary>
+	          The connection to the server/peer needs to be reasonably secure.
+	          </summary>
+        </requirement>
+
+        <requirement name="C:server">
+            <summary>
+            A server is neccesary for communcation between clients. This can be
+            embedded in the user software or implemented seperately.
+            </summary>
+        </requirement>
+
+        <requirement name="C:storage">
+            <summary>
+            A method of storing files is to be determined at a later date.
+            </summary>
+        </requirement>
+
+        <requirement name="P:manage_network">
+            <summary>
+            Networking portions of the software need to be able to handle realtime
+            text syncronization and concurrent file transfers.
+            </summary>
+        </requirement>
+
+    </requirements>
+</doc>
